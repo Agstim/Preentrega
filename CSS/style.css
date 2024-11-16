@@ -1,0 +1,280 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rubik-Fuente {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/*Me queda debajo de la imagen*/
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: Center;
+}
+
+/* General 
+No se si me toma la fuente
+*/
+body {
+    font-family: Rubik, Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+
+}
+
+/* Encabezado */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 1000;
+    background: transparent;
+    overflow: hidden;
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.header-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo-container {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    z-index: 2;
+    
+}
+
+.logo {
+    max-width: 120px;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    padding: 10px 0;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección Servicios */
+#Servicios {
+    padding: 320px 20px 20px;
+}
+
+
+.service-item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    background: grey;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: right;
+    
+}
+
+article div ul li {
+    
+    list-style: none;
+}
+
+.service-item img {
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+.service-details {
+    
+    align-content: right;
+    flex: 1;
+}
+
+/* Esto es para invertir el orden de los elementos, poniendo la imagen a la derecha */
+.service-item-reverse {
+    text-align: left;
+    flex-direction: row-reverse; /* Invierte el orden de los elementos */
+}
+
+/* Sección Productos (Flexbox) */
+#Productos .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card button {
+    background: #0078d7;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #005bb5;
+}
+
+/* Sección Reseñas (Grid) */
+#Reseñas .review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.review-grid div {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #0078d7;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Sección Inicio */
+#Inicio {
+    margin-top: 200px; /* Evita superposición con el header fijo */
+    height: 400px;
+    background: url("images/PNG/taller-background.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#Inicio .inicio-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#Inicio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#Inicio p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/*Formulario*/
+
+.content {
+    background-color: darkgrey;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    margin-top: 150px;
+    
+    width: 100%;
+    max-width: 600px;
+    align-content: right ;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario label {
+    text-align: left;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.formulario button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario button:hover {
+    background-color: lightgray;
+}
